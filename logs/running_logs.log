@@ -40,3 +40,71 @@ x==========x]
 [2025-05-25 12:43:34,482: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2025-05-25 17:29:00,719: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-25 17:29:00,739: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-25 17:29:00,745: INFO: common: created directory at: artifacts]
+[2025-05-25 17:29:00,745: INFO: common: created directory at: artifacts\training]
+[2025-05-25 19:48:29,604: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-25 19:48:29,616: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-25 19:48:29,627: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-25 19:48:29,631: INFO: common: created directory at: artifacts]
+[2025-05-25 19:48:29,633: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-25 19:48:29,635: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-25 19:49:19,619: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-25 19:49:21,188: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-25 19:49:21,189: INFO: main: *******************]
+[2025-05-25 19:49:21,189: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-25 19:49:21,194: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-25 19:49:21,197: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-25 19:49:21,199: INFO: common: created directory at: artifacts]
+[2025-05-25 19:49:21,200: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-25 19:49:22,391: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-25 19:49:22,931: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-25 19:49:22,931: INFO: main: *******************]
+[2025-05-25 19:49:22,933: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-25 19:49:22,937: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-25 19:49:22,941: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-25 19:49:22,943: INFO: common: created directory at: artifacts]
+[2025-05-25 19:49:22,944: ERROR: main: 'ConfigurationManager' object has no attribute 'get_training_config']
+Traceback (most recent call last):
+  File "C:\Users\sriva\Kidney-disease-classification-deep-learning-project\main.py", line 41, in <module>
+    model_trainer.main()
+  File "c:\users\sriva\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training_config = config.get_training_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_training_config'
+[2025-05-25 19:50:43,250: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-25 19:50:43,250: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-25 19:50:43,250: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-25 19:50:43,250: INFO: common: created directory at: artifacts]
+[2025-05-25 19:50:43,250: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-25 19:50:43,250: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-25 19:51:10,749: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-05-25 19:51:12,310: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-25 19:51:12,310: INFO: main: *******************]
+[2025-05-25 19:51:12,312: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-05-25 19:51:12,316: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-25 19:51:12,320: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-25 19:51:12,320: INFO: common: created directory at: artifacts]
+[2025-05-25 19:51:12,320: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-25 19:51:13,272: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-25 19:51:13,794: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-05-25 19:51:13,794: INFO: main: *******************]
+[2025-05-25 19:51:13,794: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-05-25 19:51:13,800: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-25 19:51:13,804: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-25 19:51:13,804: INFO: common: created directory at: artifacts]
+[2025-05-25 19:51:13,804: ERROR: main: 'ConfigurationManager' object has no attribute 'get_training_config']
+Traceback (most recent call last):
+  File "C:\Users\sriva\Kidney-disease-classification-deep-learning-project\main.py", line 41, in <module>
+    model_trainer.main()
+  File "c:\users\sriva\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training_config = config.get_training_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_training_config'
