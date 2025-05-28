@@ -36,3 +36,20 @@ conda activate cnncls
 ```bash
 pip install -r requirements.txt
 ```
+
+## MLflow Tracking with DagsHub
+
+This project uses [MLflow](https://mlflow.org/) for experiment tracking, integrated with [DagsHub](https://dagshub.com/).
+
+### Launch MLflow UI Locally
+
+To run the MLflow UI locally, use:
+
+```bash
+mlflow ui
+
+'''
+set MLFLOW_TRACKING_URI=https://dagshub.com/srivatsa.ai22/Kidney-disease-classification-deep-learning-project.mlflow
+set MLFLOW_TRACKING_USERNAME=srivatsa.ai22
+set MLFLOW_TRACKING_PASSWORD=52794c4800701621d7b6dc515564aa936a6c6d6a
+'''
